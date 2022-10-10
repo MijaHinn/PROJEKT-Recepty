@@ -33,3 +33,122 @@ Nastav je receptům jako obrázky na pozadí (tj. nepřidávej je jako <img> do 
 Na rozložení prvků NEPOUŽÍVEJ absolutní pozicování, ale pouze flexboxy.
 Flexboxy mohou být vnořené do sebe, klidně několikrát.
 */
+
+/* --- Mobil:		0 - 479px --- */
+.kontejner {
+	color: white;
+}
+
+.recept1 {background-image: url(images/chlebicek.jpg);}
+.recept2 {background-image: url(images/tacos.jpg);}
+.recept3 {background-image: url(images/cizrna.jpg);}
+.recept4 {background-image: url(images/burger.jpg);}
+
+.obsah-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.obsah-flex h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	margin: 0;
+	padding: 0;
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.info p {
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+.hlavni-recept {
+	background-image: url(images/salat.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 200px;
+}
+
+.hlavni-recept h1 {
+	font-size: 28px;
+}
+
+.male-recepty {
+	background-size: cover;
+	background-position: center;
+	min-height: 90px;
+}
+
+.male-recepty h1 {
+	font-size: 18px;	
+}
+
+
+/* --- Tablet:		480px - 859px --- */
+@media screen and (min-width: 480px) {
+
+	.obsah-flex {
+		padding: 20px;
+	}
+
+	.hlavni-recept {
+		min-height: 250px;
+	}
+
+	.hlavni-recept h1 {
+		font-size: 36px;
+	}
+
+	.recept-flex {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.male-recepty {
+		min-height: 150px;
+	}
+
+	.recept1, .recept2, .recept3, .recept4 {
+		flex: 1 0 50%
+	}
+
+	.male-recepty h1 {
+		font-size: 22px;	
+	}
+
+}
+
+/* --- Počítač:	860px a víc --- */
+@media screen and (min-width: 860px) {
+
+	.kontejner {
+		display: flex;
+	}
+	.hlavni-recept {
+		min-height: 400px;
+	}
+
+	.hlavni-recept h1 {
+		font-size: 48px;
+	}
+
+	.male-recepty {
+		min-height: 200px;
+	}
+
+	.recept1, .recept2, .recept3, .recept4 {
+		flex: 1 0 50%
+	}
+
+	.male-recepty h1 {
+		font-size: 28px;	
+	}
+
+}
