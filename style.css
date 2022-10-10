@@ -38,6 +38,7 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
 
 .kontejner {
 	color: white;
+	width: auto;
 }
 
 .recept1 {background-image: url(images/chlebicek.jpg);}
@@ -131,10 +132,7 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
 
 	.kontejner {
 		display: flex;
-	}
-
-	.obsah-flex {
-		flex: 1 0 50%;
+		justify-content: center;
 	}
 
 	.hlavni-recept {
