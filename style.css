@@ -35,6 +35,7 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
 */
 
 /* --- Mobil:		0 - 479px --- */
+
 .kontejner {
 	color: white;
 }
@@ -131,6 +132,11 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
 	.kontejner {
 		display: flex;
 	}
+
+	.obsah-flex {
+		flex: 1 0 50%;
+	}
+
 	.hlavni-recept {
 		min-height: 400px;
 	}
@@ -141,10 +147,6 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
 
 	.male-recepty {
 		min-height: 200px;
-	}
-
-	.recept1, .recept2, .recept3, .recept4 {
-		flex: 1 0 50%
 	}
 
 	.male-recepty h1 {
